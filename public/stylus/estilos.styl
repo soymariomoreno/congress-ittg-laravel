@@ -1,0 +1,543 @@
+@import "normalize.styl"
+@import "icon.styl"
+
+azul-oscuro = #344B54
+azul-claro = #5B8BCD
+gris = #EEE
+naranja = #F4502A
+gris-claro = #bcbec0;
+gris-mas-claro = #e6e7e8;
+gris-oscuro = #666;
+a
+	text-decoration none
+body
+	background gris
+	position relative
+	font-size 16px
+	font-family: 'Open Sans', sans-serif;
+	height 100%
+	transition left 1s
+	left 0
+	&.swipeable
+		position fixed
+		width 100%
+		left 200px
+figure
+	margin 0
+	img
+		width 60px
+footer
+	background azul-oscuro
+	color white
+	padding 1em 0
+	a
+		color white
+		font-style italic
+		text-decoration underline
+	p
+		text-align center
+		margin 0.5em auto
+		&:first-child
+			margin-bottom 0
+		&:last-child
+			margin-top 0
+header
+	background azul-oscuro
+	height 4em
+	overflow hidden
+	padding-bottom 0.5em
+	position relative
+	text-align center
+section
+	padding 1em
+	overflow hidden
+ul
+	padding 0
+li
+	list-style none
+nav
+	background azul-oscuro
+	position fixed
+	top 0
+	left -200px
+	width 200px
+	height 100%
+	transition all 1s
+	&.swipeable
+		left 0
+	ul
+		padding 0
+	li
+		border-bottom 1px solid white
+		a
+			display block
+			padding 0.5em
+			color white
+			transition all .5s			
+			&:hover
+				color azul-oscuro
+				background white
+				text-align right
+table
+	background white
+	border-radius 0.5em
+	margin 0 auto
+	overflow hidden
+	width 100%
+	tr
+		border-bottom 1px solid gris-mas-claro
+		text-align center
+		&:first-child
+			background gris-claro
+			input 
+				padding 0.5em
+				width 95%
+		&:nth-child(even)
+			background gris-mas-claro
+		&:last-child
+			border 0
+		td
+			padding 0.5em 0em
+			&.table-header:before
+				content: ""
+// OOCSS
+
+.left
+	float left
+.right
+	float right
+.block
+	display block
+.inline
+	display inline !important
+.inline-block
+	display inline-block !important
+.center_block
+	margin 0.3em auto	
+.center_text
+	text-align center
+.error
+	color red
+.status-pendiente
+	background gris-oscuro !important
+.icon-question
+	color gris-claro
+	font-size 1.5em
+	cursor pointer
+.add
+	background azul-claro
+	border 1px solid transparent
+	border-radius 5px
+	color white
+	display inline-block
+	padding 0.2em 0.5em
+.delete
+	background naranja
+	border 1px solid transparent
+	border-radius 5px
+	color white
+	display inline-block
+	padding 0.2em 0.5em
+.margin-top
+	margin-top 3em
+.margin-bottom
+	margin-bottom 3em
+.margin-left
+	margin-left 3em
+.height-auto
+	height auto !important
+.overflowHidden
+	overflow hidden
+.pointer
+	cursor pointer
+.triangulo-bottom
+.triangulo-top
+	border-style solid
+	height 0
+	width 0	
+.triangulo-bottom	
+	border-color gris-oscuro transparent transparent transparent
+	border-width 8px 7px 0 7px
+	display inline-block
+.triangulo-top	
+	border-color transparent transparent gris-oscuro transparent
+	border-width 0px 7px 8px 7px
+	display inline-block
+.available-true
+	text-decoration line-through
+	color gray
+.inicio-sesion
+	.title-item
+		padding-right 6em
+.admin_usuario
+	.title-item
+		padding 0
+	.btn-edit
+		display inline-block
+		margin-right 0
+	.btn-delete
+		display inline-block
+		margin-right 1.5em
+		background naranja
+		padding 0.2em 0.5em	
+		color white
+		border-radius 5px
+		box-shadow 0 0 10px rgba(0,0,0,0.4)
+		transition all 0.5s
+		&:hover
+			color naranja
+			background white
+.avatar
+	width 2em
+	height 2em
+	margin-top -0.33em
+	float left
+	margin-right 0.4em
+	border-radius 50%
+.aviso
+	display none
+	z-index 2
+	background naranja
+	color white
+	width 16em
+	position fixed
+	top 0
+	left 50%
+	margin-left -9em
+	padding 1em
+	border-radius 0 0 5px 5px
+	text-align center
+	.close
+		margin-top 0.5em
+		display block
+		cursor pointer
+.btn
+	display inline-block
+	border 1px solid transparent
+	margin-right 1.5em
+	background naranja
+	padding 0.2em 0.5em	
+	color white
+	border-radius 5px
+	box-shadow 0 0 10px rgba(0,0,0,0.4)
+	transition all 0.5s
+	&:hover
+		color naranja
+		background white
+.error404
+	margin 0 auto
+	width 17em
+	margin-top 17em
+	// position absolute !important
+	// top 3em
+	// left 50%
+	// margin-left -22.5%
+	.title-item
+		padding 0
+	h2
+		line-height 4em
+.disponibilidad
+	text-align right
+	a
+		margin 1em 0
+.email
+	.header		
+		background white
+		text-align center
+		figure
+		h1
+			display inline-block
+			margin 0.5em 2em
+	.content
+		background azul-claro
+		color white
+		padding 1em
+		.btn-email
+			padding 1em 0
+			.btn
+				padding 0.5em
+				color white
+				background naranja
+.item-sesiones
+	position static
+.image-taller-talleres
+	margin 0 auto
+	width 50%
+.figure-micai
+	left 5px
+	position absolute
+	top 5px
+.figure-ittg
+	position absolute
+	right 5px
+	top 5px
+.procedimiento
+	background white
+	height 28em
+	border 1px solid azul-claro
+	border-radius 5px
+	padding 1em
+	overflow scroll
+	position absolute
+	top 2em
+	left 2em
+	right 2em
+	li
+		margin 0.5em 0 
+	ul
+		ul
+			margin-left 1.5em
+	.close-procedimiento
+		color azul-claro
+		float right
+		cursor pointer
+.ver-mas
+	cursor pointer
+.icon-menu
+	cursor pointer
+	font-size 1.5em
+	left 75px
+	margin-top -0.5em
+	position absolute
+	top 50%
+	color white
+	font-weight azul-oscuro
+.input
+	padding 0.5em
+	margin 0.3em
+	border-radius 5px
+	border 1px solid azul-claro
+	display block
+.usuario
+	margin-top 1em
+.menu-personal
+	ul
+		width 11em
+		li
+			a
+				background azul-claro
+				border-radius 5px 0 0 5px
+				color white
+				display block
+				float right
+				margin-bottom 0.2em
+				padding 0.5em
+				text-align right
+				transition 0.5s all
+				width 8em
+				&:hover
+					color black
+					background white
+					width 11em
+.item
+	background white
+	box-shadow 0 0 20px rgba(0,0,0,0.4)
+	padding 1em
+	overflow hidden	
+	margin-bottom 1em
+	position relative	
+.item-taller
+	background white
+	box-shadow 0 0 20px rgba(0,0,0,0.4)
+	padding 1em
+	overflow hidden	
+	margin-bottom 1em
+	position relative
+.title-micai
+	text-align center
+	font-size 7em
+	text-transform uppercase
+.title-item
+	font-style italic
+	margin 0
+	padding-right 4em
+	a
+		color black
+.info-item
+	overflow hidden
+	height 7em
+.pagination
+	text-align center
+	li
+		display inline-block
+		margin 0 0.5em
+		padding 0 0.2em
+		background azul-claro
+		border-radius 2px
+		&.active
+		&.dis
+			color black
+		a
+			color white
+.publicar
+	.title-taller
+		display block
+		margin-bottom 0.5em	
+	.image-taller
+		display block
+		margin-bottom 0.5em	
+	.type-taller
+		display block
+		margin-bottom 0.5em	
+	.content-taller
+		margin-bottom 0.5em	
+		padding 0.5em
+		display block
+	.btn-taller
+		cursor pointer
+		display block
+.tag-item
+	display inline-block
+	background naranja
+	padding 0.2em 0.5em
+	position absolute
+	top 1em
+	right 1em
+	color white
+	border-radius 5px
+	box-shadow 0 0 10px rgba(0,0,0,0.4)
+	transition all 0.5s
+	&:hover
+		color naranja
+		background white
+.title-header
+	font-size 1.2em
+	line-height 4rem
+	margin 0
+	color white
+	text-align center
+	font-weight normal
+.medium
+.large
+	display none
+
+@media screen and (min-width:780px)
+	body
+		&.swipeable
+			position static
+			left 0
+	nav
+		position static
+		background azul-claro
+		width auto
+		ul
+			position relative
+			margin 0
+			font-size 0		
+			li
+				transition all 1s
+				display inline-block
+				border 0
+				font-size 1rem
+			.sesion
+				margin-top -0.2em				
+				.user
+					display block
+					padding .5em
+					color white
+					transition all .5s
+					height 1.3em
+					font-size 1.2em
+					line-height 1.2em
+					background naranja
+					border-radius 5px
+					box-shadow 0 0 10px rgba(0,0,0,0.4)
+					&:hover
+						color naranja
+						background white
+						a
+							color naranja
+					a
+						background transparent
+						color white
+	.item-sesiones
+		position absolute
+		top -1em
+		right 0
+		li
+			margin-right 0.2em
+	.aviso
+		.close		
+			display inline-block
+			position absolute
+			top 50%
+			right 0.2em
+			margin-top -0.5em
+	.admin_usuario
+		margin 0 auto
+		width 42em
+		select
+		input
+			display inline-block		
+		.btn-delete
+		.btn-edit
+			display inline-block
+			margin-right 0
+	.figure-item
+		float left
+		margin-left: -1.5em;
+		margin-right: 0.5em;
+		span
+			color white
+			background azul-claro
+			border-radius 50%
+			padding 0.5em
+			font-size 3em
+	.figure-micai
+		border-right 1px solid white
+		padding-right 0.5em
+	.figure-ittg
+		border-left 1px solid white
+		padding-left 0.5em
+	.error404
+		margin 0 auto
+		width 50%
+		margin-top 17em
+	.title-header
+		padding 0.5em 4em 0 4em
+		line-height normal
+	.small
+	.large
+		display none
+	.medium
+		display inline-block
+
+@media screen and (min-width:992px)	
+	.item
+		width 45%
+		display inline-block	
+		&:nth-child(even)
+			float right
+		&:nth-child(odd)
+			float left
+		&.inicio-sesion
+			display block
+			margin 0 auto
+			width 24em
+			float none
+		&.registro
+			float none
+			display block
+			margin 0 auto
+			width 30em
+	.admin_usuario
+		float none !important
+		display block
+		margin 0 auto
+		min-width 40em
+	.error404
+		display block
+		float none !important
+	.small
+	.medium
+		display none
+	.large
+		display inline-block
+		
+@media screen and (min-width:1110px)	
+	.publicar
+		float left
+		width 38em
+	.habiliarTalleres
+		float right
+		width 17em

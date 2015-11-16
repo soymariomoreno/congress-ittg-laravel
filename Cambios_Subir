@@ -1,0 +1,9 @@
+cambios antes de subir al servidor
+
+debug  false
+descomentar para la impresion de los pases imprimirController.php
+configurar el archivo database en micai->app->config->database.php
+para la base de datos.	
+cambiar la ruta para la confirmacion del correo. views->emails->confirmationEmail.php
+quitar los paquetes para desarrollo 
+esto no se como pero lo hare

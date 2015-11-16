@@ -1,0 +1,1 @@
+[21-Oct-2015 09:32:00 America/Mexico_City] PHP Fatal error:  Class 'Dinesh\Barcode\BarcodeServiceProvider' not found in /home/jogs78/public_html/ittg/talleres/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 157

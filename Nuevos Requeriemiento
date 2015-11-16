@@ -1,0 +1,47 @@
+Nuevos Requeriemiento
+
+ASISTENTE
+
+- Agregar en el registro al sistema
+	Institucion de Pricedencia
+	Municipio 
+	Estado
+	Telefono Movil	
+
+- Formas de Pago 
+	Paypal 
+
+	En su perfil agregar un campo para
+	subir la ficha de deposito escaneada
+
+	Opcion para inscribirse a un taller
+	siempre y cuando el vendedor haya validado
+	su pago y habilite su registro a taller
+
+- Inscripcion a taller
+	el asistente podra elegir un taller 
+	siempre y cuando haya realizado el pago
+	y aun hayan lugares	
+
+VENDEDOR
+
+- Agregar 
+
+	opcion para que visualice la ficha
+  	de pago a los que vendio pase.
+
+  	Opcion para habilitar inscripcion a 
+  	taller al momento de validar los pagos
+
+REPORTEADOR
+
+- Estadisticas
+	
+										Grupos de asistentes por Municipios o Estados
+										Envio de publicidad Masiva
+										Invitacion al evento
+
+- Asistentes	
+	
+	Control de lugares a los talleres	
+	Informar sobre los talleres (Herramientas, lugares)

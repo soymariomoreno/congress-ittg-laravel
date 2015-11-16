@@ -1,0 +1,6 @@
+los usuarios:
+admin_sistema@talleres.ittg.mx
+vendedor@talleres.ittg.mx
+en el sistema tienen el password la palabra paso
+
+la cuenta talleres@talleres.ittg.mx se usa para enviar el correo de confiramcion y tiene contraseña 9]6hbG9TAm.J 
